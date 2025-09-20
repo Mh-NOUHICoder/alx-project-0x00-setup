@@ -8,10 +8,10 @@ const sizeClasses = {
   large: "px-6 py-3 text-lg",
 };
 
-const Button: React.FC<ButtonProps> = ({ title, size = "medium", shape = "rounded-md", className = "" }) => {
+const Button: React.FC<ButtonProps> = ({ title, size = "medium", shape = "rounded-md", styles = "" }) => {
   return (
     <button
-      className={` ${sizeClasses[size]} ${shape} ${className} `}
+      className={` ${sizeClasses[size]} ${shape} ${styles} `}
     >
       {title}
     </button>
